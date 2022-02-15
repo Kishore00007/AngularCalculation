@@ -1,0 +1,28 @@
+<style>
+    h2{
+background-color: rgb(56, 92, 92);
+color: rgb(77, 181, 241);
+}
+.container {
+  display: block;
+  background-color: #e0e9e0;
+  min-height: 200px;
+  margin-top: 100px;
+}
+.al{
+    text-align: center;
+    font-size: 25px;
+}
+
+</style>
+
+<div class="container">
+    <div class="al">
+    <h2>AREA OF RECTANGLE</h2>
+    Length=<input type="text"[(ngModel)]='length'>Meters<br/>
+    Breadt=<input type="text"[(ngModel)]='breadth'>Meters<br/>
+    <input type="button" (click)="onCalculate()" value="CalculateArea"><br/>
+    Area=<input type="text" [value]="area"> Meters<sup>2</sup><br/>
+</div>
+
+</div>
